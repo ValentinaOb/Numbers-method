@@ -29,7 +29,6 @@ print("End: ",end)
 
 result=[]
 our_key=[]
-#for j in dictionary:
 
 while len(end)!=0:
     x=[]
@@ -47,20 +46,14 @@ while len(end)!=0:
                     sum=H_dic[i1]
             x.append(dictionary[i]+sum)
             
-
-    print("X: ",x)
     min_val= min(x)
     ind=x.index(min_val)
     el1, el2= our_key[ind].split("-")
     el1=int(el1)
     el2=int(el2)
-    #print("El2: ",el2)
-    print("End: ",end)
     start.append(el2)
-    #if(el2 in end): end.remove(el2)
     end.remove(el2)
 
-    #Way_dic[our_key[ind]] = dictionary[our_key[ind]]
     Way_dic[our_key[ind]] = min_val
     
     print(Way_dic)
@@ -68,8 +61,6 @@ while len(end)!=0:
     H_dic[el2] = min_val
 
     print(H_dic)
-
-    #result.append(our_key[ind], " : h = ", dictionary[our_key[ind]])
 
 
 
