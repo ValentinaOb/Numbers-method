@@ -62,12 +62,10 @@ while len(end)!=0:
     end.remove(el2)
 
     Way_dic[our_key[ind]] = min_val
-    
-    print(Way_dic)
-    
     H_dic[el2] = min_val
 
-    print(H_dic)
+print(Way_dic)
+print(H_dic)
 
 
 
